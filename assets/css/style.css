@@ -1,0 +1,61 @@
+/* Login and Registration */
+
+#loginForm {
+    margin-bottom: 100px;
+}
+
+#loginPage {
+    display: none;
+}
+
+#RegistrationPage {
+    display: none;
+}
+
+/* Catalog */
+
+#mainPage {
+    display: none;
+}
+
+.product-image {
+    width: 250px;
+    height: 200px;
+}
+
+.buy-button {
+    border: 1px solid black;
+    color: rgb(0, 56, 222);
+}
+
+.bought-button {
+    border: 1px solid black;
+    color: gray;
+}
+
+#catalog-container {
+    margin-bottom: 30px;
+}
+
+/* Order */
+.empty-order {
+    display: none;
+}
+
+.modal-order {
+    display: block;
+    background-color: white;
+}
+
+.notmodal-order {
+    display: none;
+}
+
+.red {
+    background-color: red;
+    margin-right: 10px;
+}
+
+.green {
+    background-color: green;
+}

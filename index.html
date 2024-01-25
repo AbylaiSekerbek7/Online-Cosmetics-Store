@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div di="loginRegisButtons">
+        <button id="onLoginBtn">Go to Login</button>
+        <button id="onRegisBtn">Go to Registration</button>
+    </div>
+
+    <!-- Login Page -->
+    <div id="loginPage">
+        <h2>Login Form</h2>
+        <form id="loginForm">
+            <div>
+                <label for="ulogin"><b>Login</b></label>
+                <input type="text" placeholder="Enter Login" name="ulogin" id="uLogin">
+
+                <label for="uPassword"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="uPassword" id="uPassword">
+
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- RegistrationPage -->
+    <div id="RegistrationPage">
+        <h2>Registration Form</h2>
+        <form id="registrForm">
+            <div>
+                <label for="regName"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="regName" id="regName">
+
+                <label for="regLogin"><b>Login</b></label>
+                <input type="text" placeholder="Enter Login" name="regLogin" id="regLogin">
+
+                <label for="regPassword"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="regPassword" id="regPassword">
+
+                <label for="regEmail"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="regEmail" id="regEmail">
+
+                <label for="regAddress"><b>Address</b></label>
+                <input type="text" placeholder="Enter Address" name="regAddress" id="regAddress">
+
+                <label for="regPhone"><b>Phone</b></label>
+                <input type="tel" placeholder="Enter Phone" name="regPhone" id="regPhone">
+
+                <label for="regSkinType"><b>Skin Type</b></label>
+                <input type="text" placeholder="Enter Skin Type" name="regSkinType" id="regSkinType">
+
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="mainPage">
+
+        <h1>Добро пожаловать на наш сайт косметики!</h1>
+        <div id="catalog-form">
+            <label for="viewOptions">Посмотреть каталог:</label>
+            <select id="viewOptions">
+                <option value="all">Весь каталог</option>
+                <option value="rating">По рейтингу</option>
+                <option value="cheapFirst">Сперва дешевые</option>
+                <option value="expensiveFirst">Сперва дорогие</option>
+            </select>
+            
+            <label for="viewCategory">Выберите категорию</label>
+            <select id="viewCategory">
+                <option value="all">Все категории</option>
+                <option value="perfume">Парфюмы</option>
+                <option value="pomade">Помады для губ</option>
+                <option value="shampoo">Шампунь для волос</option>
+            </select>
+
+            <button id="viewButton" onclick="viewCatalog()">✓</button>
+        </div>
+
+        <div id="catalog-container"></div>
+
+        <button id="orderButton" class="empty-order" onclick="viewOrder()">Смотреть Корзину</button>
+
+        <div id="order-container" class="notmodal-order">
+            <h1>Ваша Корзина</h1>
+            <div id="orders">
+
+            </div>
+            <h2 id="totalSumm"> Сумма = </h2>
+            <button id="buyButton">Купить сейчас</button>
+        </div>
+        
+
+    </div>
+
+    <script src="assets/js/user.js"></script>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/order.js"></script>
+    
+    <script src="assets/js/users.js"></script>
+    <script src="assets/js/products.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
